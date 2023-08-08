@@ -3,21 +3,41 @@
 <head>
     <title>小米游戏中心版主工具</title>
     <style>
-        #clustrmaps-widget {
+        #p-widget {
             width: 80px;
             height: 40px;
         }
         .link-button {
             margin-right: 10px;
         }
+        .container {
+            position: relative;
+        }
+        .map-container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .image-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
     </style>
 </head>
 <body>
     <h1>小米游戏中心版主工具</h1>
     <p>欢迎访问小米游戏中心版主工具的主页。</p>
-    <div id="clustrmaps-widget"></div>
-    <a href="https://achintski.github.io/pic4" target="_blank" class="link-button">2*2格式制图</a>
-    <a href="https://achintski.github.io/pic6" target="_blank" class="link-button">2*3格式制图</a>
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=NepDq14rLdIf0uoMq87hKilQiqOBbcHhmKgW5Gu7O7Q'></script>
+    <div class="container">
+        <div id="p-widget"></div>
+        <a href="https://achintski.github.io/pic4" target="_blank" class="link-button">2*2格式制图</a>
+        <a href="https://achintski.github.io/pic6" target="_blank" class="link-button">2*3格式制图</a>
+        <div class="map-container">
+            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=NepDq14rLdIf0uoMq87hKilQiqOBbcHhmKgW5Gu7O7Q'></script>
+        </div>
+        <div class="image-container">
+            <img src="https://achintski.github.io/example.png" alt="Your Image">
+        </div>
+    </div>
 </body>
 </html>
